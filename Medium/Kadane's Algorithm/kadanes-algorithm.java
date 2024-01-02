@@ -31,28 +31,22 @@ class Main {
 // } Driver Code Ends
 
 
-
-
 class Solution{
 
     // arr: input array
     // n: size of array
     //Function to find the sum of contiguous subarray with maximum sum.
-    long maxSubarraySum( int arr [] , int n ) 
-    {
+    long maxSubarraySum(int arr[], int n){
         
-        // Your code here
-        int res = arr[ 0 ];
-        int maxEnding = arr[ 0 ];
+        long res = arr[0];
+        long maxEnding = arr[0];
         
-        for ( int i = 1; i < arr.length; i++ ) 
-        {
-            maxEnding = Math.max( maxEnding + arr[ i ] , arr [ i ] );
-            res = Math.max( res , maxEnding );
+        for (int i = 1; i < arr.length; i++) {
+            maxEnding = Math.max(maxEnding + arr[i], arr [i]);
+            res = Math.max(res, maxEnding);
         }
          
         return res;
-        
     }
-    
 }
+
