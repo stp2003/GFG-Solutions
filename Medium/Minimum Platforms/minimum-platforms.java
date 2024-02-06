@@ -57,6 +57,7 @@ class Solution
         int i = 0, j = 0;
         
         while(i < n) {
+            
             if(arr[i] <= dep[j]) {
                 count++;
                 res = Math.max(res, count);
@@ -68,6 +69,7 @@ class Solution
                 j++;
             }
         }
+        
         return res;
         
     }
