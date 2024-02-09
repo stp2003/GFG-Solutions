@@ -36,10 +36,12 @@ class Main{
 // } Driver Code Ends
 
 
-class Solution {
-    
-    static ArrayList<Integer> subarraySum(int[] arr, int n, int s) {
-        //** Your code here
+class Solution
+{
+    //Function to find a continuous sub-array which adds up to a given number.
+    static ArrayList<Integer> subarraySum(int[] arr, int n, int s) 
+    {
+        // Your code here
         
         int right = 0;
         int left = 0;
@@ -73,5 +75,3 @@ class Solution {
         
     }
 }
-
-
