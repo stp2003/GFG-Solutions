@@ -25,7 +25,6 @@ class GFG {
 class Solution {
     public static ArrayList<Integer> duplicates(int arr[], int n) {
         // code here
-        
         ArrayList<Integer> newList = new ArrayList<Integer>();
         Arrays.sort(arr);
         
@@ -42,6 +41,5 @@ class Solution {
         newList.add(-1);
         
         return newList;
-        
     }
 }
