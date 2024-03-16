@@ -17,27 +17,22 @@ class Solution{
     {
         // Complete the function
         
-        Map<Integer, Integer> map = new HashMap<>();
-        
-        int res = 0, prefSum = 0;
-        map.put(0, -1);
-        
-        for(int i = 0; i < n; i++)
-        {
-            prefSum += a[i];
-            int r = prefSum % k;
-            
-            if(r < 0)
-                r += k;
-                
-            if(!map.containsKey(r))
-                map.put(r,i);
-                
-            else
-                res = Math.max(res,i - map.get(r));
+        Map<Integer, Integer> remainderMap = new HashMap<>();
+        int cumSum = 0, maxLength = 0;
+
+        remainderMap.put(0, -1);
+
+        for (int i = 0; i < n; i++) {
+            cumSum += a[i];
+            int remainder = ((cumSum % k) + k) % k; 
+
+            if (remainderMap.containsKey(remainder)) {
+                maxLength = Math.max(maxLength, i - remainderMap.get(remainder));
+            } else {
+                remainderMap.put(remainder, i);
+            }
         }
-        
-        return res;
+        return maxLength;
        
     }
  
