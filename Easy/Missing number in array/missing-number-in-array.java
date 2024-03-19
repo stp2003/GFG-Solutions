@@ -38,6 +38,5 @@ class Solution {
             sum += array[i];
  
         return n_elements_sum - sum;
-        
     }
 }
