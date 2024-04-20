@@ -21,3 +21,4 @@ K = 445
 <li><span style="font-size: 18px;">1 &lt;= arr[i] &lt;= 10<sup>6</sup></span></li>
 <li><span style="font-size: 18px;">1 &lt;= K &lt;= 10<sup>6</sup></span></li>
 </ul></div><p><span style=font-size:18px><strong>Company Tags : </strong><br><code>Infosys</code>&nbsp;<code>Oracle</code>&nbsp;<code>Wipro</code>&nbsp;<code>Linkedin</code>&nbsp;<code>Qualcomm</code>&nbsp;<code>TCS</code>&nbsp;<code>Cognizant</code>&nbsp;<code>Accenture</code>&nbsp;<br><p><span style=font-size:18px><strong>Topic Tags : </strong><br><code>Arrays</code>&nbsp;<code>Searching</code>&nbsp;<code>Divide and Conquer</code>&nbsp;<code>Data Structures</code>&nbsp;<code>Algorithms</code>&nbsp;
+
